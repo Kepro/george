@@ -61,7 +61,7 @@ export const CurrenciesPage = () => {
     return (
       <div>
         <CurrencyList currencies={filteredList} />
-        <div className="my-4 text-sm text-gray-400 text-right">
+        <div className="my-4 text-sm text-gray-600 text-right">
           Last updated: {new Date(data!.lastUpdated).toLocaleString()}
         </div>
       </div>

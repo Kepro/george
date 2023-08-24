@@ -30,14 +30,14 @@ const CurrencyListItem: FC<Props> = ({ currency }) => {
       <img
         alt={currency.countryName}
         ref={imgRef}
-        className="w-[50px] h-[34px] sm:w-[74px] sm:h-[47px] "
+        className="w-[50px] h-[34px] sm:w-[70px] sm:h-[47px] "
         // TODO: ask UX for flag placeholder
         src={`data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"/>`}
       />
       <div className="grow font-semibold sm:font-bold text-sm sm:text-base">
         {currency.countryName}
         {currency.legacyCurrency && (
-          <span className="text-sm font-normal ml-1 text-gray-400">
+          <span className="text-sm font-normal ml-1 text-gray-500">
             (legacy)
           </span>
         )}
